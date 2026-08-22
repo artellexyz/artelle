@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Artelle mark">
+  <!-- Horizon: a dot at rest on a line -->
+  <line x1="22" y1="84" x2="98" y2="84" stroke="#1C1712" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="76" cy="70" r="11" fill="#1C1712"/>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- II. Apex — an A with its crossbar replaced by a point of view. -->
+  <path d="M30 92 60 30 90 92" fill="none" stroke="#1C1712" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="60" cy="66" r="10" fill="#1C1712"/>
+</svg>

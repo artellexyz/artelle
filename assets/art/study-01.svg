@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Study I — Ochre Field (placeholder artwork) -->
+  <defs>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.06 0.06 0.06 0 0"/></filter>
+  </defs>
+  <rect width="800" height="1000" fill="#EAE3D2"/>
+  <rect x="90" y="130" width="620" height="560" fill="#C6913B"/>
+  <circle cx="255" cy="690" r="185" fill="#EAE3D2"/>
+  <line x1="90" y1="838" x2="710" y2="838" stroke="#2A2620" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="592" cy="252" r="17" fill="#2A2620"/>
+  <rect width="800" height="1000" filter="url(#grain)" opacity=".55"/>
+</svg>

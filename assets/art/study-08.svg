@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Study VIII — Ascent (placeholder artwork) -->
+  <defs>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.06 0.06 0.06 0 0"/></filter>
+  </defs>
+  <rect width="800" height="1000" fill="#C6913B"/>
+  <polygon points="0,1000 800,430 800,1000" fill="#3B372F"/>
+  <circle cx="182" cy="262" r="72" fill="#EAE3D2"/>
+  <rect width="800" height="1000" filter="url(#grain)" opacity=".55"/>
+</svg>

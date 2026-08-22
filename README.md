@@ -24,13 +24,12 @@ Publish directory: `.` (repo root). No build command.
 
 ## ⚠️ Placeholders to replace before announcing
 
-Everything below is stand-in copy/art so the site reads finished:
-
-1. **All artwork** — `assets/art/study-*.svg` are generated placeholder studies.
-   Replace with photos/scans of real work (JPG/WebP ~2000px long edge), then update
-   `src`, `alt`, titles, medium, sizes, and prices in `index.html` + `works.html`.
-   Keep the `data-cats` attribute (`original print edition`) per availability.
-2. **Artist name/bio** — site uses "Artelle" as the artist name; swap in her name
+1. **More artwork** — one real piece is live (`assets/art/work-01.jpg`, "Untitled (Mosque)").
+   The geometric `study-*.svg` files are unused placeholders kept for reference — delete once
+   the catalogue has a few more real pieces. Add each new piece as a card in
+   `index.html` + `works.html` (JPG/WebP ~2000px long edge; keep the `data-cats` attr).
+2. **Titles / sizes / prices** — current piece is "Untitled", unpriced ("Enquire") until she names it.
+3. **Artist name/bio** — site uses "Artelle" as the artist name; swap in her name
    and real statement in `about.html` (+ hero line in `index.html`).
 3. **Email** — `hello@artelle.xyz` needs a mailbox or forward set up.
 4. **Instagram** — currently links to `instagram.com/artelle` (may be taken).

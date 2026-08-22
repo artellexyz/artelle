@@ -114,6 +114,8 @@ a .plate:hover,.work:hover .plate{
   box-shadow:0 2px 0 rgba(28,23,18,.04),0 26px 52px -28px rgba(28,23,18,.42);
 }
 .plate img,.plate svg{width:100%;height:100%;object-fit:cover}
+.plate.natural{aspect-ratio:auto}
+.plate.natural img,.plate.natural svg{height:auto}
 
 /* ---------- works grid ---------- */
 .section{padding:clamp(56px,9vh,96px) 0 0}

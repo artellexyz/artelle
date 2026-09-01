@@ -189,9 +189,9 @@ a .plate:hover,.work:hover .plate{
   display:none;align-items:center;justify-content:center;padding:clamp(18px,4vw,48px);
 }
 .lb.open{display:flex}
-.lb-figure{max-width:min(860px,100%);width:100%;text-align:left}
-.lb-frame{background:var(--raise);border:1px solid var(--line);box-shadow:0 30px 70px -40px rgba(28,23,18,.5)}
-.lb-frame svg,.lb-frame img{width:100%;height:auto;max-height:72vh;object-fit:contain}
+.lb-figure{max-width:100%;text-align:left}
+.lb-frame{width:fit-content;max-width:100%;background:var(--raise);border:1px solid var(--line);box-shadow:0 30px 70px -40px rgba(28,23,18,.5)}
+.lb-frame svg,.lb-frame img{display:block;width:auto;height:auto;max-width:min(88vw,1100px);max-height:75vh}
 .lb-cap{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-top:16px;flex-wrap:wrap}
 .lb-title{font-family:var(--serif);font-style:italic;font-size:1.3rem}
 .lb-meta{font-size:.82rem;color:var(--ink-2)}

@@ -9,11 +9,18 @@ Publish directory: `.` (repo root). No build command.
 
 | Page | What |
 |---|---|
-| `index.html` | Hero, selected works, statement, "three ways to own" |
-| `works.html` | Full catalogue + filters + lightbox |
+| `index.html` | Hero, selected works, formats band |
+| `works.html` | Full catalogue (20 works) + lightbox |
 | `editions.html` | Original vs archival print vs digital edition, how buying works |
-| `about.html` | Statement, bio, commissions |
+| `about.html` | Bio, commissions |
 | `contact.html` | Email / Instagram / studio visits / list |
+
+## Catalogue
+
+20 works live in `assets/art/work-01.jpg … work-20.jpg` (resized to ≤1600px long edge,
+JPEG q85, via `sips`). To add a piece: drop the JPG in `assets/art/`, add a card in
+`works.html` (and optionally `index.html`). Captions are title + medium only; buying
+is enquire-by-email.
 
 ## Brand
 
@@ -24,18 +31,10 @@ Publish directory: `.` (repo root). No build command.
 
 ## ⚠️ Placeholders to replace before announcing
 
-1. **More artwork** — one real piece is live (`assets/art/work-01.jpg`, "Untitled (Mosque)").
-   The geometric `study-*.svg` files are unused placeholders kept for reference — delete once
-   the catalogue has a few more real pieces. Add each new piece as a card in
-   `index.html` + `works.html` (JPG/WebP ~2000px long edge; keep the `data-cats` attr).
-2. **Titles / sizes / prices** — current piece is "Untitled", unpriced ("Enquire") until she names it.
-3. **Artist name/bio** — site uses "Artelle" as the artist name; swap in her name
-   and real statement in `about.html` (+ hero line in `index.html`).
-3. **Email** — `hello@artelle.xyz` needs a mailbox or forward set up.
-4. **Instagram** — currently links to `instagram.com/artelle` (may be taken).
-5. **Prices** — invented; set real ones.
-6. **CV** — placeholder rows in `about.html`.
-7. **OG image** — add `assets/img/og.jpg` + `<meta property="og:image">` once real art exists.
+1. **Titles / prices** — titles are descriptive (set by the studio, not the artist yet); everything is "enquire".
+2. **Email** — `hello@artelle.xyz` needs a mailbox or forward set up.
+3. **Instagram** — currently links to `instagram.com/artelle` (may be taken).
+4. **CV** — minimal rows in `about.html`.
 
 ## Deploy (Render)
 

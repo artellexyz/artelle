@@ -197,7 +197,7 @@ def generate(data):
     outputs['editions.html']=page('Collecting an artwork — Artelle','Enquire about original artworks by Anisa Quraishi, including prices, availability and delivery.',body,'editions.html',active='editions')
     body='''<section class="section catalog-section"><div class="narrow"><p class="eyebrow">Artelle · Anisa Quraishi</p><h1>Contact the studio.</h1><p class="lede catalog-intro">For artwork enquiries, prices and availability, email the studio.</p><ul class="contact-list"><li><span class="k">Email</span><a class="v" href="mailto:hello@artelle.xyz?subject=Artwork%20enquiry">hello@artelle.xyz</a></li><li><span class="k">Artist</span><span class="v">Anisa Quraishi</span></li><li><span class="k">Based in</span><span class="v">Pakistan</span></li></ul><p class="catalog-note">Please include the artwork title or reference and your delivery country and postcode.</p></div></section>'''
     outputs['contact.html']=page('Contact — Artelle','Contact the studio of Anisa Quraishi for artwork enquiries, prices and availability.',body,'contact.html',active='contact')
-    buffer=io.StringIO(newline='');writer=csv.DictWriter(buffer,fieldnames=PUBLIC_CSV_FIELDS,extrasaction='ignore');writer.writeheader();writer.writerows(csv_rows(artworks))
+    buffer=io.StringIO(newline='');writer=csv.DictWriter(buffer,fieldnames=PUBLIC_CSV_FIELDS,extrasaction='ignore',lineterminator='\n');writer.writeheader();writer.writerows(csv_rows(artworks))
     outputs['catalog/artworks.csv']='\ufeff'+buffer.getvalue()
     locations=['index.html','works.html','catalog.html','about.html','editions.html','contact.html']+[artwork_url(a) for a in artworks]
     outputs['sitemap.xml']='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('<url><loc>'+ORIGIN+('/' if path=='index.html' else '/'+path)+'</loc></url>\n' for path in locations)+'</urlset>\n'
@@ -210,7 +210,7 @@ def local_exports(destination,archive,data,import_data):
     if destination == ROOT or ROOT in destination.parents:
         raise ValueError('Private exports must be outside the public repository')
     destination.mkdir(parents=True,exist_ok=True)
-    buffer=io.StringIO(newline='');writer=csv.DictWriter(buffer,fieldnames=CSV_FIELDS);writer.writeheader();writer.writerows(csv_rows(data['artworks']))
+    buffer=io.StringIO(newline='');writer=csv.DictWriter(buffer,fieldnames=CSV_FIELDS,lineterminator='\n');writer.writeheader();writer.writerows(csv_rows(data['artworks']))
     (destination/'artworks.csv').write_bytes(('\ufeff'+buffer.getvalue()).encode('utf-8'))
     shutil.copyfile(ROOT/'catalog/artworks.json',destination/'artworks.json')
     fd,temp_path=tempfile.mkstemp(prefix='artelle-',suffix='.sqlite',dir=destination)

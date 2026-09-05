@@ -1,0 +1,1690 @@
+{
+  "schema_version": 1,
+  "artist": "Anisa Quraishi",
+  "updated": "2026-09-06",
+  "description": "One record per original artwork. Public catalog metadata only; keep buyer details and financial records outside this public repository.",
+  "artworks": [
+    {
+      "id": "AQ-0001",
+      "artist": "Anisa Quraishi",
+      "title": "Minaret",
+      "title_status": "proposed",
+      "previous_title": "Mosque",
+      "category": "landscape",
+      "medium": null,
+      "support": "paper",
+      "medium_basis": "unconfirmed",
+      "dimensions": null,
+      "year": null,
+      "date_basis": "unconfirmed",
+      "date_inscription": null,
+      "description": "A red sandstone mosque with pale domes and minarets, framed by a tree in red blossom.",
+      "image": {
+        "path": "assets/art/work-01.jpg",
+        "alt": "A red sandstone mosque with pale domes and minarets, framed by a tree in red blossom.",
+        "width": 1600,
+        "height": 1231,
+        "thumbnail": "assets/art/thumbs/aq-0001.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 492
+      },
+      "source_photos": {
+        "front": null,
+        "reverse": null,
+        "additional_reverse": []
+      },
+      "pairing_basis": "legacy_catalog",
+      "reverse_inscription": null,
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "unconfirmed",
+      "review_flags": [
+        "confirm_medium",
+        "confirm_dimensions",
+        "confirm_year",
+        "reverse_not_supplied"
+      ],
+      "catalog_notes": [
+        "Previous site medium, not yet verified: Colored pencil & watercolor on paper.",
+        "Retained from the previous catalog; no matching front or back in this import."
+      ]
+    },
+    {
+      "id": "AQ-0002",
+      "artist": "Anisa Quraishi",
+      "title": "Rosewalk",
+      "title_status": "proposed",
+      "previous_title": "Stone Cottage",
+      "category": "landscape",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 16.0,
+        "width": 10.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2026,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '26",
+      "description": "A stone path winds between beds of pink flowers to the door of a small cottage beneath leafy trees.",
+      "image": {
+        "path": "assets/art/work-02.jpg",
+        "alt": "A stone path winds between beds of pink flowers to the door of a small cottage beneath leafy trees.",
+        "width": 1134,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0002.jpg",
+        "thumbnail_width": 638,
+        "thumbnail_height": 900
+      },
+      "source_photos": {
+        "front": "IMG_2516.HEIC",
+        "reverse": "IMG_2515.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Landscape in watercolour. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0003",
+      "artist": "Anisa Quraishi",
+      "title": "Apricot Duet",
+      "title_status": "proposed",
+      "previous_title": "Calla Lilies",
+      "category": "botanical",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 11.0,
+        "width": 8.0,
+        "unit": "in",
+        "inscription": "11 x 8\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2026,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '26",
+      "description": "Two apricot calla lilies rise on slender stems against a soft blue ground.",
+      "image": {
+        "path": "assets/art/work-03.jpg",
+        "alt": "Two apricot calla lilies rise on slender stems against a soft blue ground.",
+        "width": 1099,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0003.jpg",
+        "thumbnail_width": 618,
+        "thumbnail_height": 900
+      },
+      "source_photos": {
+        "front": "IMG_2510.HEIC",
+        "reverse": "IMG_2509.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Flowers in pastels. 11 x 8\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0004",
+      "artist": "Anisa Quraishi",
+      "title": "Bani Gala Winter",
+      "title_status": "proposed",
+      "previous_title": "Field Path",
+      "category": "landscape",
+      "medium": "Watercolour and pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.0,
+        "width": 16.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2026,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '26",
+      "description": "A pale path leads through a golden field towards bare winter trees beneath a blue sky.",
+      "image": {
+        "path": "assets/art/work-04.jpg",
+        "alt": "A pale path leads through a golden field towards bare winter trees beneath a blue sky.",
+        "width": 1600,
+        "height": 1167,
+        "thumbnail": "assets/art/thumbs/aq-0004.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 467
+      },
+      "source_photos": {
+        "front": "IMG_2514.HEIC",
+        "reverse": "IMG_2513.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Winter in Bani Gala. Landscape in watercolour + pastels. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0005",
+      "artist": "Anisa Quraishi",
+      "title": "Emberwing",
+      "title_status": "proposed",
+      "previous_title": "Butterfly",
+      "category": "botanical",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 16.0,
+        "width": 10.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2026,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '26",
+      "description": "A butterfly opens broad, rippling wings in red, coral and pink against a pale ground.",
+      "image": {
+        "path": "assets/art/work-05.jpg",
+        "alt": "A butterfly opens broad, rippling wings in red, coral and pink against a pale ground.",
+        "width": 1303,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0005.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 786
+      },
+      "source_photos": {
+        "front": "IMG_2512.HEIC",
+        "reverse": "IMG_2511.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Butterfly in pastels. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0006",
+      "artist": "Anisa Quraishi",
+      "title": "Blush",
+      "title_status": "proposed",
+      "previous_title": "Tulips",
+      "category": "botanical",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 16.0,
+        "width": 10.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "Pink tulips gather above long, folding green leaves on warm-toned paper.",
+      "image": {
+        "path": "assets/art/work-06.jpg",
+        "alt": "Pink tulips gather above long, folding green leaves on warm-toned paper.",
+        "width": 1175,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0006.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 871
+      },
+      "source_photos": {
+        "front": "IMG_2522.HEIC",
+        "reverse": "IMG_2521.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Tulips in watercolour. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0007",
+      "artist": "Anisa Quraishi",
+      "title": "Earthen Light",
+      "title_status": "proposed",
+      "previous_title": "Two Pots",
+      "category": "still-life",
+      "medium": null,
+      "support": "paper",
+      "medium_basis": "unconfirmed",
+      "dimensions": null,
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa Oct. '17",
+      "description": "Pale ceramic vessels emerge from passages of deep blue, warm ochre and terracotta.",
+      "image": {
+        "path": "assets/art/work-07.jpg",
+        "alt": "Pale ceramic vessels emerge from passages of deep blue, warm ochre and terracotta.",
+        "width": 1171,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0007.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 874
+      },
+      "source_photos": {
+        "front": "IMG_2508.HEIC",
+        "reverse": null,
+        "additional_reverse": []
+      },
+      "pairing_basis": "front_only",
+      "reverse_inscription": null,
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_medium",
+        "confirm_dimensions",
+        "reverse_not_supplied"
+      ],
+      "catalog_notes": [
+        "Previous site medium, not yet verified: Watercolor on paper.",
+        "IMG_2508 is the first front in the batch. IMG_2509 labels the following calla-lily work, not this piece; its reverse is missing."
+      ]
+    },
+    {
+      "id": "AQ-0008",
+      "artist": "Anisa Quraishi",
+      "title": "Scarlet Chorus",
+      "title_status": "proposed",
+      "previous_title": "Spider Lilies",
+      "category": "botanical",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 16.0,
+        "width": 10.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "Red flowers on slender green stems repeat across a pale wash of pink and green.",
+      "image": {
+        "path": "assets/art/work-08.jpg",
+        "alt": "Red flowers on slender green stems repeat across a pale wash of pink and green.",
+        "width": 1119,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0008.jpg",
+        "thumbnail_width": 629,
+        "thumbnail_height": 900
+      },
+      "source_photos": {
+        "front": "IMG_2520.HEIC",
+        "reverse": "IMG_2519.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Flowers in watercolour. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0009",
+      "artist": "Anisa Quraishi",
+      "title": "Solitary Rose",
+      "title_status": "proposed",
+      "previous_title": "Rose",
+      "category": "botanical",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 16.0,
+        "width": 10.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "A single deep pink rose leans above a clear glass bottle, its green leaves falling beside the stem.",
+      "image": {
+        "path": "assets/art/work-09.jpg",
+        "alt": "A single deep pink rose leans above a clear glass bottle, its green leaves falling beside the stem.",
+        "width": 1117,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0009.jpg",
+        "thumbnail_width": 628,
+        "thumbnail_height": 900
+      },
+      "source_photos": {
+        "front": "IMG_2524.HEIC",
+        "reverse": "IMG_2523.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Rose in a bottle in watercolour. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0010",
+      "artist": "Anisa Quraishi",
+      "title": "Orchard Table",
+      "title_status": "proposed",
+      "previous_title": "Fruit Bowl",
+      "category": "still-life",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.0,
+        "width": 16.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "A bowl of grapes and round fruit sits beside a pale pot and a cluster of red tomatoes.",
+      "image": {
+        "path": "assets/art/work-10.jpg",
+        "alt": "A bowl of grapes and round fruit sits beside a pale pot and a cluster of red tomatoes.",
+        "width": 1600,
+        "height": 1112,
+        "thumbnail": "assets/art/thumbs/aq-0010.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 445
+      },
+      "source_photos": {
+        "front": "IMG_2528.HEIC",
+        "reverse": "IMG_2527.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Fruit in a bowl in watercolour. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0011",
+      "artist": "Anisa Quraishi",
+      "title": "Quiet Glass",
+      "title_status": "proposed",
+      "previous_title": "Still Life with Bottles",
+      "category": "still-life",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 16.0,
+        "width": 10.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "Two clear glass bottles, a tipped wooden vessel and a small wooden tool rest on a pale cloth.",
+      "image": {
+        "path": "assets/art/work-11.jpg",
+        "alt": "Two clear glass bottles, a tipped wooden vessel and a small wooden tool rest on a pale cloth.",
+        "width": 1113,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0011.jpg",
+        "thumbnail_width": 626,
+        "thumbnail_height": 900
+      },
+      "source_photos": {
+        "front": "IMG_2526.HEIC",
+        "reverse": "IMG_2525.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "glass bottles. Still Life in watercolour. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0012",
+      "artist": "Anisa Quraishi",
+      "title": "Painted Earth",
+      "title_status": "proposed",
+      "previous_title": "Clay Pots",
+      "category": "still-life",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.0,
+        "width": 16.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "A round pot painted in red, blue and yellow stands beside a wooden bowl with its lid tilted open.",
+      "image": {
+        "path": "assets/art/work-12.jpg",
+        "alt": "A round pot painted in red, blue and yellow stands beside a wooden bowl with its lid tilted open.",
+        "width": 1600,
+        "height": 1104,
+        "thumbnail": "assets/art/thumbs/aq-0012.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 442
+      },
+      "source_photos": {
+        "front": "IMG_2530.HEIC",
+        "reverse": "IMG_2529.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Still Life in watercolour. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0013",
+      "artist": "Anisa Quraishi",
+      "title": "Kitchen Harvest",
+      "title_status": "proposed",
+      "previous_title": "Vegetables",
+      "category": "still-life",
+      "medium": null,
+      "support": "paper",
+      "medium_basis": "unconfirmed",
+      "dimensions": null,
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "Cauliflower, carrots, cucumbers and red tomatoes are arranged on a deep blue cloth.",
+      "image": {
+        "path": "assets/art/work-13.jpg",
+        "alt": "Cauliflower, carrots, cucumbers and red tomatoes are arranged on a deep blue cloth.",
+        "width": 1600,
+        "height": 1107,
+        "thumbnail": "assets/art/thumbs/aq-0013.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 443
+      },
+      "source_photos": {
+        "front": null,
+        "reverse": null,
+        "additional_reverse": []
+      },
+      "pairing_basis": "legacy_catalog",
+      "reverse_inscription": null,
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_medium",
+        "confirm_dimensions",
+        "reverse_not_supplied"
+      ],
+      "catalog_notes": [
+        "Previous site medium, not yet verified: Watercolor on paper.",
+        "Retained from the previous catalog; no matching front or back in this import."
+      ]
+    },
+    {
+      "id": "AQ-0014",
+      "artist": "Anisa Quraishi",
+      "title": "Summer Flourish",
+      "title_status": "proposed",
+      "previous_title": "Lilies",
+      "category": "botanical",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.0,
+        "width": 16.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "Orange lilies and purple flowers open above a dense sweep of green leaves.",
+      "image": {
+        "path": "assets/art/work-14.jpg",
+        "alt": "Orange lilies and purple flowers open above a dense sweep of green leaves.",
+        "width": 1600,
+        "height": 1101,
+        "thumbnail": "assets/art/thumbs/aq-0014.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 440
+      },
+      "source_photos": {
+        "front": "IMG_2534.HEIC",
+        "reverse": "IMG_2533.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Flowers in watercolour. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0015",
+      "artist": "Anisa Quraishi",
+      "title": "Before Bloom",
+      "title_status": "proposed",
+      "previous_title": "Tulip Buds",
+      "category": "botanical",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": null,
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "Two red flower buds are studied separately against open white paper.",
+      "image": {
+        "path": "assets/art/work-15.jpg",
+        "alt": "Two red flower buds are studied separately against open white paper.",
+        "width": 1600,
+        "height": 1158,
+        "thumbnail": "assets/art/thumbs/aq-0015.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 463
+      },
+      "source_photos": {
+        "front": "IMG_2532.HEIC",
+        "reverse": "IMG_2531.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Flowers in watercolour.",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_dimensions"
+      ],
+      "catalog_notes": [
+        "The reverse names the medium but supplies no dimensions. No size inferred from neighbouring sheets.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0016",
+      "artist": "Anisa Quraishi",
+      "title": "Turning Leaves",
+      "title_status": "proposed",
+      "previous_title": "Leaf Studies",
+      "category": "botanical",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": null,
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "A green leafy sprig and a rust-red leaf sit beside lightly drawn botanical outlines.",
+      "image": {
+        "path": "assets/art/work-16.jpg",
+        "alt": "A green leafy sprig and a rust-red leaf sit beside lightly drawn botanical outlines.",
+        "width": 1600,
+        "height": 1110,
+        "thumbnail": "assets/art/thumbs/aq-0016.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 444
+      },
+      "source_photos": {
+        "front": "IMG_2538.HEIC",
+        "reverse": "IMG_2537.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Leaves in watercolour.",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_dimensions"
+      ],
+      "catalog_notes": [
+        "The reverse names the medium but supplies no dimensions. No size inferred from neighbouring sheets.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0017",
+      "artist": "Anisa Quraishi",
+      "title": "Small Beginnings",
+      "title_status": "proposed",
+      "previous_title": "Sprig",
+      "category": "botanical",
+      "medium": "Watercolour",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": null,
+      "year": 2017,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '17",
+      "description": "A small sprig of green leaves occupies the centre of an otherwise open sheet.",
+      "image": {
+        "path": "assets/art/work-17.jpg",
+        "alt": "A small sprig of green leaves occupies the centre of an otherwise open sheet.",
+        "width": 1183,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0017.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 866
+      },
+      "source_photos": {
+        "front": "IMG_2536.HEIC",
+        "reverse": "IMG_2535.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Leaves in watercolour.",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_dimensions"
+      ],
+      "catalog_notes": [
+        "The reverse names the medium but supplies no dimensions. No size inferred from neighbouring sheets.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0018",
+      "artist": "Anisa Quraishi",
+      "title": "Stillness in Gold",
+      "title_status": "proposed",
+      "previous_title": "Still Life with Black Vase",
+      "category": "still-life",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 16.0,
+        "width": 10.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2026,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '26",
+      "description": "A dark vase, rounded fruit and red tomatoes sit within a geometric arrangement of gold and pink.",
+      "image": {
+        "path": "assets/art/work-18.jpg",
+        "alt": "A dark vase, rounded fruit and red tomatoes sit within a geometric arrangement of gold and pink.",
+        "width": 1120,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0018.jpg",
+        "thumbnail_width": 630,
+        "thumbnail_height": 900
+      },
+      "source_photos": {
+        "front": "IMG_2567.HEIC",
+        "reverse": "IMG_2566.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Fruit and a vase in pastels. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0019",
+      "artist": "Anisa Quraishi",
+      "title": "Window Bouquet",
+      "title_status": "proposed",
+      "previous_title": "Flowers in a Vase",
+      "category": "still-life",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 16.0,
+        "width": 10.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2026,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '26",
+      "description": "Red and white flowers rise from a striped vase beside a window, above a cloth traced with floral outlines.",
+      "image": {
+        "path": "assets/art/work-19.jpg",
+        "alt": "Red and white flowers rise from a striped vase beside a window, above a cloth traced with floral outlines.",
+        "width": 1114,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0019.jpg",
+        "thumbnail_width": 627,
+        "thumbnail_height": 900
+      },
+      "source_photos": {
+        "front": "IMG_2518.HEIC",
+        "reverse": "IMG_2517.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Flowers in a vase. Still life in pastels. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0020",
+      "artist": "Anisa Quraishi",
+      "title": "Prism",
+      "title_status": "proposed",
+      "previous_title": "Composition",
+      "category": "abstract",
+      "medium": null,
+      "support": "paper",
+      "medium_basis": "unconfirmed",
+      "dimensions": null,
+      "year": null,
+      "date_basis": "unconfirmed",
+      "date_inscription": null,
+      "description": "A framed abstract composition brings together a red circle, yellow planes and deep blue geometric forms.",
+      "image": {
+        "path": "assets/art/work-20.jpg",
+        "alt": "A framed abstract composition brings together a red circle, yellow planes and deep blue geometric forms.",
+        "width": 1324,
+        "height": 1600,
+        "thumbnail": "assets/art/thumbs/aq-0020.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 773
+      },
+      "source_photos": {
+        "front": null,
+        "reverse": null,
+        "additional_reverse": []
+      },
+      "pairing_basis": "legacy_catalog",
+      "reverse_inscription": null,
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "framed_in_photo",
+      "signature": "unconfirmed",
+      "review_flags": [
+        "confirm_medium",
+        "confirm_dimensions",
+        "confirm_year",
+        "reverse_not_supplied"
+      ],
+      "catalog_notes": [
+        "Previous site medium, not yet verified: Pastel on paper.",
+        "Retained from the previous catalog; no matching front or back in this import."
+      ]
+    },
+    {
+      "id": "AQ-0021",
+      "artist": "Anisa Quraishi",
+      "title": "Blue Hours",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 16.0,
+        "width": 10.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2019,
+      "date_basis": "reverse_signature",
+      "date_inscription": "Anisa '19",
+      "description": "Overlapping blue circles form a loose vertical rhythm across a textured blue field.",
+      "image": {
+        "path": "assets/art/aq-0021.jpg",
+        "alt": "Overlapping blue circles form a loose vertical rhythm across a textured blue field.",
+        "width": 1504,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0021.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 851
+      },
+      "source_photos": {
+        "front": "IMG_2540.HEIC",
+        "reverse": "IMG_2539.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Anisa '19. Abstract in pastels. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0022",
+      "artist": "Anisa Quraishi",
+      "title": "Verdant Orbits",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.5,
+        "width": 8.5,
+        "unit": "in",
+        "inscription": "10.5 x 8.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": null,
+      "date_basis": "unconfirmed",
+      "date_inscription": null,
+      "description": "Circles in lime, moss and deep green overlap on a luminous green ground.",
+      "image": {
+        "path": "assets/art/aq-0022.jpg",
+        "alt": "Circles in lime, moss and deep green overlap on a luminous green ground.",
+        "width": 1626,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0022.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 787
+      },
+      "source_photos": {
+        "front": "IMG_2543.HEIC",
+        "reverse": "IMG_2542.HEIC",
+        "additional_reverse": [
+          "IMG_2541.HEIC"
+        ]
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Anisa. Abstract in pastels. 10.5 x 8.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_year",
+        "retake_front_without_hands"
+      ],
+      "catalog_notes": [
+        "IMG_2541 is an additional in-motion reverse view of the small sheet shown clearly in IMG_2542. Do not shift subsequent pairings.",
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0023",
+      "artist": "Anisa Quraishi",
+      "title": "Tidal Moons",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 16.0,
+        "width": 10.0,
+        "unit": "in",
+        "inscription": "16 x 10\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2019,
+      "date_basis": "reverse_signature",
+      "date_inscription": "Anisa '19",
+      "description": "Blue and green circles drift across one another, with a dark blue disc near the top.",
+      "image": {
+        "path": "assets/art/aq-0023.jpg",
+        "alt": "Blue and green circles drift across one another, with a dark blue disc near the top.",
+        "width": 1513,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0023.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 846
+      },
+      "source_photos": {
+        "front": "IMG_2545.HEIC",
+        "reverse": "IMG_2544.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Anisa '19. Abstract in pastels. 16 x 10\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0024",
+      "artist": "Anisa Quraishi",
+      "title": "Verdure",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.5,
+        "width": 8.5,
+        "unit": "in",
+        "inscription": "10.5 x 8.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": null,
+      "date_basis": "conflicting_signatures",
+      "date_inscription": "Front: Anisa '18. Reverse: Anisa '17.",
+      "description": "Overlapping geometric planes in moss, olive and leaf green create a quiet tonal composition.",
+      "image": {
+        "path": "assets/art/aq-0024.jpg",
+        "alt": "Overlapping geometric planes in moss, olive and leaf green create a quiet tonal composition.",
+        "width": 1597,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0024.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 802
+      },
+      "source_photos": {
+        "front": "IMG_2547.HEIC",
+        "reverse": "IMG_2546.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Anisa '17. Abstract in pastels. 10.5 x 8.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "retake_front_without_hands",
+        "confirm_year",
+        "conflicting_dates"
+      ],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded.",
+        "Front signature reads 2018; reverse signature reads 2017. Year left unconfirmed pending the artist. Image rotated 180 degrees to place the front signature upright."
+      ]
+    },
+    {
+      "id": "AQ-0025",
+      "artist": "Anisa Quraishi",
+      "title": "Rose Facets",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.5,
+        "width": 8.5,
+        "unit": "in",
+        "inscription": "10.5 x 8.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": null,
+      "date_basis": "unconfirmed",
+      "date_inscription": null,
+      "description": "Angular rose and plum shapes overlap within a saturated pink field.",
+      "image": {
+        "path": "assets/art/aq-0025.jpg",
+        "alt": "Angular rose and plum shapes overlap within a saturated pink field.",
+        "width": 1643,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0025.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 779
+      },
+      "source_photos": {
+        "front": "IMG_2549.HEIC",
+        "reverse": "IMG_2548.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Anisa. Abstract in pastels. 10.5 x 8.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_year",
+        "retake_front_without_hands"
+      ],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0026",
+      "artist": "Anisa Quraishi",
+      "title": "Umber",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.5,
+        "width": 8.5,
+        "unit": "in",
+        "inscription": "10.5 x 8.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": null,
+      "date_basis": "unconfirmed",
+      "date_inscription": null,
+      "description": "Rounded forms in terracotta and dark umber overlap on an earthy brown ground.",
+      "image": {
+        "path": "assets/art/aq-0026.jpg",
+        "alt": "Rounded forms in terracotta and dark umber overlap on an earthy brown ground.",
+        "width": 1580,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0026.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 810
+      },
+      "source_photos": {
+        "front": "IMG_2551.HEIC",
+        "reverse": "IMG_2550.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Anisa. Abstract in pastels. 10.5 x 8.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_year",
+        "retake_front_without_hands"
+      ],
+      "catalog_notes": [
+        "A faint inscription is visible on the front; its date is not reliably readable.",
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0027",
+      "artist": "Anisa Quraishi",
+      "title": "Solar",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.5,
+        "width": 8.5,
+        "unit": "in",
+        "inscription": "10.5 x 8.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": null,
+      "date_basis": "unconfirmed",
+      "date_inscription": null,
+      "description": "Circles emerge through layers of golden yellow, orange and rust.",
+      "image": {
+        "path": "assets/art/aq-0027.jpg",
+        "alt": "Circles emerge through layers of golden yellow, orange and rust.",
+        "width": 1625,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0027.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 788
+      },
+      "source_photos": {
+        "front": "IMG_2553.HEIC",
+        "reverse": "IMG_2552.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Anisa. Abstract in pastels. 10.5 x 8.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_year",
+        "retake_front_without_hands"
+      ],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0028",
+      "artist": "Anisa Quraishi",
+      "title": "Daybreak",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.5,
+        "width": 8.5,
+        "unit": "in",
+        "inscription": "10.5 x 8.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": null,
+      "date_basis": "unconfirmed",
+      "date_inscription": null,
+      "description": "Translucent yellow, pink and pale green shapes overlap around a central rose-coloured circle.",
+      "image": {
+        "path": "assets/art/aq-0028.jpg",
+        "alt": "Translucent yellow, pink and pale green shapes overlap around a central rose-coloured circle.",
+        "width": 1602,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0028.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 799
+      },
+      "source_photos": {
+        "front": "IMG_2555.HEIC",
+        "reverse": "IMG_2554.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Anisa. Abstract in pastels. 10.5 x 8.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_year",
+        "retake_front_without_hands"
+      ],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0029",
+      "artist": "Anisa Quraishi",
+      "title": "Carmine",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.5,
+        "width": 8.5,
+        "unit": "in",
+        "inscription": "10.5 x 8.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": null,
+      "date_basis": "unconfirmed",
+      "date_inscription": null,
+      "description": "Triangular red and pink planes fold across a warm rose field.",
+      "image": {
+        "path": "assets/art/aq-0029.jpg",
+        "alt": "Triangular red and pink planes fold across a warm rose field.",
+        "width": 1535,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0029.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 834
+      },
+      "source_photos": {
+        "front": "IMG_2557.HEIC",
+        "reverse": "IMG_2556.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Anisa. Abstract in pastels. 10.5 x 8.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "confirm_year",
+        "retake_front_without_hands"
+      ],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0030",
+      "artist": "Anisa Quraishi",
+      "title": "Undertow",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 9.0,
+        "width": 12.0,
+        "unit": "in",
+        "inscription": "12 x 9\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2018,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '18",
+      "description": "Curving bands of blue, green and charcoal turn towards a dark central point.",
+      "image": {
+        "path": "assets/art/aq-0030.jpg",
+        "alt": "Curving bands of blue, green and charcoal turn towards a dark central point.",
+        "width": 2000,
+        "height": 1677,
+        "thumbnail": "assets/art/thumbs/aq-0030.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 537
+      },
+      "source_photos": {
+        "front": "IMG_2559.HEIC",
+        "reverse": "IMG_2558.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Abstract in pastels. 12 x 9\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "retake_front_without_hands"
+      ],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded.",
+        "Presented in landscape orientation so the front signature reads upright; height and width normalized accordingly."
+      ]
+    },
+    {
+      "id": "AQ-0031",
+      "artist": "Anisa Quraishi",
+      "title": "Gathering",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 13.0,
+        "width": 10.5,
+        "unit": "in",
+        "inscription": "13 x 10.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2018,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '18",
+      "description": "Green vessels and red, yellow and charcoal planes gather into an abstract still life.",
+      "image": {
+        "path": "assets/art/aq-0031.jpg",
+        "alt": "Green vessels and red, yellow and charcoal planes gather into an abstract still life.",
+        "width": 1635,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0031.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 783
+      },
+      "source_photos": {
+        "front": "IMG_2561.HEIC",
+        "reverse": "IMG_2560.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Abstract in pastels. 13 x 10.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "retake_front_without_hands"
+      ],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0032",
+      "artist": "Anisa Quraishi",
+      "title": "Ochre Interlude",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 13.0,
+        "width": 10.5,
+        "unit": "in",
+        "inscription": "13 x 10.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2018,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '18",
+      "description": "Rounded ochre forms meet plum and charcoal rectangles within a dark geometric composition.",
+      "image": {
+        "path": "assets/art/aq-0032.jpg",
+        "alt": "Rounded ochre forms meet plum and charcoal rectangles within a dark geometric composition.",
+        "width": 1620,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0032.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 790
+      },
+      "source_photos": {
+        "front": "IMG_2563.HEIC",
+        "reverse": "IMG_2562.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Abstract in pastels. 13 x 10.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "retake_front_without_hands",
+        "flatten_sheet_for_retake"
+      ],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    },
+    {
+      "id": "AQ-0033",
+      "artist": "Anisa Quraishi",
+      "title": "Flight",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "abstract",
+      "medium": "Pastel",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.5,
+        "width": 13.0,
+        "unit": "in",
+        "inscription": "13 x 10.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2018,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '18",
+      "description": "Long blue and red curves sweep through sharp yellow and charcoal planes.",
+      "image": {
+        "path": "assets/art/aq-0033.jpg",
+        "alt": "Long blue and red curves sweep through sharp yellow and charcoal planes.",
+        "width": 2000,
+        "height": 1654,
+        "thumbnail": "assets/art/thumbs/aq-0033.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 529
+      },
+      "source_photos": {
+        "front": "IMG_2565.HEIC",
+        "reverse": "IMG_2564.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Abstract in pastels. 13 x 10.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "retake_front_without_hands",
+        "flatten_sheet_for_retake"
+      ],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded.",
+        "Presented in landscape orientation so the front signature reads upright; height and width normalized accordingly."
+      ]
+    },
+    {
+      "id": "AQ-0034",
+      "artist": "Anisa Quraishi",
+      "title": "Red Reverie",
+      "title_status": "proposed",
+      "previous_title": null,
+      "category": "botanical",
+      "medium": "Mixed media",
+      "support": "paper",
+      "medium_basis": "reverse_inscription",
+      "dimensions": {
+        "height": 10.5,
+        "width": 8.5,
+        "unit": "in",
+        "inscription": "10.5 x 8.5\"",
+        "basis": "reverse_inscription",
+        "extent": "unspecified"
+      },
+      "year": 2019,
+      "date_basis": "front_signature",
+      "date_inscription": "Anisa '19",
+      "description": "Large red flowers with yellow centres open among green leaves and dark blue shapes.",
+      "image": {
+        "path": "assets/art/aq-0034.jpg",
+        "alt": "Large red flowers with yellow centres open among green leaves and dark blue shapes.",
+        "width": 1576,
+        "height": 2000,
+        "thumbnail": "assets/art/thumbs/aq-0034.jpg",
+        "thumbnail_width": 640,
+        "thumbnail_height": 812
+      },
+      "source_photos": {
+        "front": "IMG_2569.HEIC",
+        "reverse": "IMG_2568.HEIC",
+        "additional_reverse": []
+      },
+      "pairing_basis": "sequence_and_visual_match",
+      "reverse_inscription": "Flowers in mix media. 10.5 x 8.5\"",
+      "availability": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "framing": "unconfirmed",
+      "signature": "observed",
+      "review_flags": [
+        "retake_front_without_hands"
+      ],
+      "catalog_notes": [
+        "Size is copied from the reverse; height and width follow the displayed orientation. Sheet versus image-area size is not specified.",
+        "Matched using the top sheet inscription, the following front and the surrounding stack; background-sheet labels are excluded."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "import_date": "2026-09-06",
+  "photo_count": 62,
+  "front_count": 31,
+  "reverse_count": 30,
+  "additional_reverse_count": 1,
+  "photos": [
+    {
+      "filename": "IMG_2508.HEIC",
+      "sha256": "03df7d90d3fe325422f52ccfa38b42339adc1e88a7692b3d91036b1fff090f17",
+      "artwork_id": "AQ-0007",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2509.HEIC",
+      "sha256": "b612ff2a4885a50097f3154393adc3111e7122a8962022d22e152096e6ac05d6",
+      "artwork_id": "AQ-0003",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2510.HEIC",
+      "sha256": "92c42296a865776f7d54b1f75afc146828401fd4e3f092a9683d1526b13013d4",
+      "artwork_id": "AQ-0003",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2511.HEIC",
+      "sha256": "023f3cb156891b46cf17d043fd75a833fff7cb581fca0d2db9f218bf8aa585af",
+      "artwork_id": "AQ-0005",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2512.HEIC",
+      "sha256": "7175e8d776d43a0ee5ecb8c532faf71cf64da7041e48b199eaab0f94fdeb22ca",
+      "artwork_id": "AQ-0005",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2513.HEIC",
+      "sha256": "3301733427ac4e5eba7294a98d721650e2f1af2d52665ec359cd6815e22691a7",
+      "artwork_id": "AQ-0004",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2514.HEIC",
+      "sha256": "ca469731712a1626cfd1e425da57934b792a8985996c3dd0eb20b496d021cda6",
+      "artwork_id": "AQ-0004",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2515.HEIC",
+      "sha256": "75415bf613aa429c58762c1ff4b5bd7ff8c4d1ed2604b580f61e951558d2fc1e",
+      "artwork_id": "AQ-0002",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2516.HEIC",
+      "sha256": "3e86b4b9bf30ee5afae2a2dd98abeab42ca1a46cd3ad812b54794e4f1444952f",
+      "artwork_id": "AQ-0002",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2517.HEIC",
+      "sha256": "7e55e7ab043cdd90492efad6d6e6dd07e55e4bc0e36b0d4bc3478176603ae6d5",
+      "artwork_id": "AQ-0019",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2518.HEIC",
+      "sha256": "877828dcfc8c49c31930a94cb1c22cdb945810eb3857facbae2167fac6a67052",
+      "artwork_id": "AQ-0019",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2519.HEIC",
+      "sha256": "8e8b713cbca5a363c2a7985c0e1998eeedb2be4777f583ced042d8158d012e50",
+      "artwork_id": "AQ-0008",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2520.HEIC",
+      "sha256": "893528a0a3d27a12fd264936797dd594fa552b6c013e92d79d310d5ea4003394",
+      "artwork_id": "AQ-0008",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2521.HEIC",
+      "sha256": "3bda030d83c16b960bc486fbb452308c02fec6a582c738575b29e28012f1c2e8",
+      "artwork_id": "AQ-0006",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2522.HEIC",
+      "sha256": "d7447409dbfbf03552f19b7722005d4e194a19f534ee42b15e0c07d23efb825b",
+      "artwork_id": "AQ-0006",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2523.HEIC",
+      "sha256": "d5bf7424ac5f84299f17ff8c4c894df4fde4b94e972676ec74ac70fc084b182d",
+      "artwork_id": "AQ-0009",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2524.HEIC",
+      "sha256": "ca386e1f1409a2f3d552aa89dbdb76d45f0900af548e26fd12fc2548a745bd9c",
+      "artwork_id": "AQ-0009",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2525.HEIC",
+      "sha256": "4dd361450cb0dc4b21b14327507278d30761ddcc9ca8961d93e92f61cd5b834c",
+      "artwork_id": "AQ-0011",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2526.HEIC",
+      "sha256": "5e361eb449e0a1f74c3a4f194a1550aa35e5e775e5e3938501dd14c41202fceb",
+      "artwork_id": "AQ-0011",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2527.HEIC",
+      "sha256": "edfdf5562352327dfd67711879eb5266a42ec2772a199985aadf6ddd437b8858",
+      "artwork_id": "AQ-0010",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2528.HEIC",
+      "sha256": "e13506567eecc407fd29ddba9003a046b7c591063ffa4b0d784e3403849a0614",
+      "artwork_id": "AQ-0010",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2529.HEIC",
+      "sha256": "0b82f16b40d04ba62632a4e01f856673b0fc0d22f65f590a5ca4d3793b86bf34",
+      "artwork_id": "AQ-0012",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2530.HEIC",
+      "sha256": "4b776a7a974bb1aeb6ef7e7a9cd2f197c317b013908467b262b52ba05a76336d",
+      "artwork_id": "AQ-0012",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2531.HEIC",
+      "sha256": "4c4bf658ee18220894599b81c241e3c9a73139cfcf84c81f4c8db2a821d8a920",
+      "artwork_id": "AQ-0015",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2532.HEIC",
+      "sha256": "ac444aca03bebe4b54c43ccb6c8a570c983bcfc24886b00bb4677d668057acd0",
+      "artwork_id": "AQ-0015",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2533.HEIC",
+      "sha256": "acf6dcd8994ebc7ad34d5ce887fc7b88d7adda5dc4994724ad26d1d1d9b57621",
+      "artwork_id": "AQ-0014",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2534.HEIC",
+      "sha256": "80c059ae967665127789018e60924d6760ecb2a11d169bd62c23cbfe01c0abfa",
+      "artwork_id": "AQ-0014",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2535.HEIC",
+      "sha256": "26cf24889ee18fe83b079831b7809dae76f60da97e3139d0f785b88cb74f6fae",
+      "artwork_id": "AQ-0017",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2536.HEIC",
+      "sha256": "dd47f1d7204b1ae065683be26f8dc2c20d8a15bebb9128e5bfa0bffd9caafb3f",
+      "artwork_id": "AQ-0017",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2537.HEIC",
+      "sha256": "aa1fadfbf0bc767a44b97034872d1d855d4eef37005e0f564544ca7a7871affe",
+      "artwork_id": "AQ-0016",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2538.HEIC",
+      "sha256": "62383d6cc498e56b25ed85042c6bb6f5c90d5e7548d79e546de63e5f84317fdd",
+      "artwork_id": "AQ-0016",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2539.HEIC",
+      "sha256": "bf31332959219d1bad331e76b4e30a38eea9b862f1bcfbebeaabc128bfaea007",
+      "artwork_id": "AQ-0021",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2540.HEIC",
+      "sha256": "b0a9b33e18d4f4f0a3f8f6c8884c681a745e9974e73310048647376e0f720d7c",
+      "artwork_id": "AQ-0021",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2541.HEIC",
+      "sha256": "42f09bf6dcec18223b50f74085591fa8cc132519b7519f1ad6b1ded8bc1e11fc",
+      "artwork_id": "AQ-0022",
+      "role": "additional_reverse"
+    },
+    {
+      "filename": "IMG_2542.HEIC",
+      "sha256": "82d41d22b5249f3088bf2939bfc102ccc38bc7f436734e102ec6a79fe4dfa210",
+      "artwork_id": "AQ-0022",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2543.HEIC",
+      "sha256": "8974a090bfbc3940c83e52a033f04b65713da39c210259a4785f41565273b276",
+      "artwork_id": "AQ-0022",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2544.HEIC",
+      "sha256": "bde059b0c5c49149c7f7cf3dee630c358e49b59f28727dbcda7e9292c4356383",
+      "artwork_id": "AQ-0023",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2545.HEIC",
+      "sha256": "d9f945bb0e9c440850a5dd5b48dbb7bc158bb1eb4f386427d4b92da634b19c75",
+      "artwork_id": "AQ-0023",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2546.HEIC",
+      "sha256": "52a1aa43181c8068571f557f15067f7c783469fe17189f32424712ee2bff0bb4",
+      "artwork_id": "AQ-0024",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2547.HEIC",
+      "sha256": "97d2ffe74039e87f4051f2a5f6a00513e5272223b6ddd9669147f719f67e39f5",
+      "artwork_id": "AQ-0024",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2548.HEIC",
+      "sha256": "2098379a069fdf8527d8e7a688ec7a6fe4a38094188cd647f1752402c789659b",
+      "artwork_id": "AQ-0025",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2549.HEIC",
+      "sha256": "b48c978919d005430801ae0aab01b9d31ecd072c3c10e2f1b017f171ef3382db",
+      "artwork_id": "AQ-0025",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2550.HEIC",
+      "sha256": "48bcb5ba95e2a3ab0c58eb8d1ec79c800c5f74d1fac3f03d8d0e42913d68d5c0",
+      "artwork_id": "AQ-0026",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2551.HEIC",
+      "sha256": "9fabc2748a535c19008c414765124ee9d3b8557a8e1ee3b4f9d29feb76fade57",
+      "artwork_id": "AQ-0026",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2552.HEIC",
+      "sha256": "9d72ddc5cc12264ff1e8c929eaaa80bacfc2eb778e3f21e190b051f9fdb1997f",
+      "artwork_id": "AQ-0027",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2553.HEIC",
+      "sha256": "40cedaea22205f3cb846bdb95330b651fb580248cdc19844116af53a12d41693",
+      "artwork_id": "AQ-0027",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2554.HEIC",
+      "sha256": "cdc6809525575d35f51106563424e464b7ad84d3ce8f3cd19d69dea9db9e5576",
+      "artwork_id": "AQ-0028",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2555.HEIC",
+      "sha256": "4a5dfcb72e8c2b0ff7bc5a32e5e1cfa0312726c179b55ef31b1a6fcfcd111023",
+      "artwork_id": "AQ-0028",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2556.HEIC",
+      "sha256": "0a1773dbc35536737081822c50a7393dd9ab3fc3614f0c8a5c16ed82f252d4f9",
+      "artwork_id": "AQ-0029",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2557.HEIC",
+      "sha256": "4322902a417c2ec8cd148c3503687464a4f522db20ea21383d20ffa00cb1390a",
+      "artwork_id": "AQ-0029",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2558.HEIC",
+      "sha256": "45e421eed0923aa048225540705d22b4c80cbd3dcdc3cf57289677eabada2fe8",
+      "artwork_id": "AQ-0030",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2559.HEIC",
+      "sha256": "092de33970819b0121f842fd47a63333ceea28b9919126dc384a51a4683a0675",
+      "artwork_id": "AQ-0030",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2560.HEIC",
+      "sha256": "d5c6ff2a6ef9dd8c5bf9d6fc7f55df2aeeea3d9be6883133ea0eaf43cf2dbedb",
+      "artwork_id": "AQ-0031",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2561.HEIC",
+      "sha256": "f9f04dea98cf65f171a68a38d6aeb7bb0e7311bf611c73b4ec046af66b6fbcca",
+      "artwork_id": "AQ-0031",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2562.HEIC",
+      "sha256": "2a8787c2c8174ffc02151715fa056109b2953079c0f793206935c006636c008c",
+      "artwork_id": "AQ-0032",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2563.HEIC",
+      "sha256": "70ec94471b49b788404aea9d46bb7a1e495399265c3d0ed8c87855bbeb16228c",
+      "artwork_id": "AQ-0032",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2564.HEIC",
+      "sha256": "9ab166ef9af657e6e3df1882ffc27e92ba8e075f03035a0cf31164354b5eaa21",
+      "artwork_id": "AQ-0033",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2565.HEIC",
+      "sha256": "c340f155934666ffd957228fd25c5bbc43e8d51feb67abb20d8e0ee0b36decdf",
+      "artwork_id": "AQ-0033",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2566.HEIC",
+      "sha256": "080d8a2a368f420de99b4d8569d398f8201f16a134324dcbfb03a365261d0bbb",
+      "artwork_id": "AQ-0018",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2567.HEIC",
+      "sha256": "5f13dc061b29dc7edccaec48200bb6697027acf5e255020166f2978946204645",
+      "artwork_id": "AQ-0018",
+      "role": "front"
+    },
+    {
+      "filename": "IMG_2568.HEIC",
+      "sha256": "016bc328bab0f49eca578f2c2cc7d94d4ef00335a9ff0c9a0b50f2f67ab13557",
+      "artwork_id": "AQ-0034",
+      "role": "reverse"
+    },
+    {
+      "filename": "IMG_2569.HEIC",
+      "sha256": "2f672f4315422a90fd070ffb1906add921616419ccc06474c032c95d32186646",
+      "artwork_id": "AQ-0034",
+      "role": "front"
+    }
+  ]
+}

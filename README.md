@@ -1,50 +1,108 @@
-# artelle
+# Artelle
 
-Artist portfolio & shop-front for **Artelle** — artelle.xyz.
+Original artwork by **Anisa Quraishi**, an artist based in Pakistan.
 
-Static site (plain HTML/CSS/JS, no build step). Deploys on Render as a Static Site.
-Publish directory: `.` (repo root). No build command.
+[artelle.xyz](https://artelle.xyz) is a static HTML/CSS/JS site hosted on **Render,
+syedOS workspace**. GitHub is `artellexyz/artelle`, managed through **buxor**.
+No Robomart hosting, database or payment resources are used.
 
-## Pages
+## Catalog
 
-| Page | What |
-|---|---|
-| `index.html` | Hero, selected works, formats band |
-| `works.html` | Full catalogue (20 works) + lightbox |
-| `editions.html` | Original vs archival print vs digital edition, how buying works |
-| `about.html` | Bio, commissions |
-| `contact.html` | Email / Instagram / studio visits / list |
+`catalog/artworks.json` is the editable master: one stable `AQ-0001` style ID
+per original. It currently contains **34 artworks**. Proposed titles, exact
+reverse inscriptions, photo references, date evidence and review flags are
+preserved alongside public metadata. Prices and availability are unconfirmed.
 
-## Catalogue
+The September 2026 import has 62 photos: **31 fronts, 30 matching reverses and
+one extra reverse view**. Seventeen fronts match previous catalog entries;
+fourteen are new. Three previous works (AQ-0001, AQ-0013, AQ-0020) are retained
+without corresponding photos in the new batch.
 
-20 works live in `assets/art/work-01.jpg … work-20.jpg` (resized to ≤1600px long edge,
-JPEG q85, via `sips`). To add a piece: drop the JPG in `assets/art/`, add a card in
-`works.html` (and optionally `index.html`). Captions are title + medium only; buying
-is enquire-by-email.
+The sequence is generally **reverse, then front**. IMG_2508 has no supplied
+reverse. IMG_2541 is an extra view of the reverse shown clearly in IMG_2542.
+Only the top sheet's inscription belongs to the next front; captions on
+underlying sheets must not be copied onto it.
 
-## Brand
+`catalog/imports/2026-09-06.json` accounts for every photograph with a role,
+artwork ID and SHA-256 digest. Full photographs and untouched HEIC originals
+are archived locally under `~/Documents/Artelle/archive/2026-09-06/`.
 
-- Mark: **Horizon** (dot at rest on a line) — `assets/img/logo.svg`, reverse `logo-reverse.svg`, `favicon.svg`
-- Six explored directions live in `assets/brand/concepts/`; the proof sheet is `design/marks.html`
-- Palette: paper `#F4F1E9`, ink `#1C1712`, secondary `#6B6353`, hairline `#DCD5C5`, ultramarine accent `#33439B`
-- Type: Cormorant Garamond (display) + Instrument Sans (text), Google Fonts
+## Generate and verify
 
-## ⚠️ Placeholders to replace before announcing
+Python 3's standard library is sufficient for normal catalog updates:
 
-1. **Titles / prices** — titles are descriptive (set by the studio, not the artist yet); everything is "enquire".
-2. **Email** — `hello@artelle.xyz` needs a mailbox or forward set up.
-3. **Instagram** — currently links to `instagram.com/artelle` (may be taken).
-4. **CV** — minimal rows in `about.html`.
+```sh
+python3 scripts/build_catalog.py
+python3 scripts/build_catalog.py --check
+node --check assets/js/site.js
+```
 
-## Deploy (Render)
+This generates the gallery, home/about/contact/collecting pages, a searchable
+catalog table, 34 individual artwork pages, a public CSV, sitemap and robots file.
+All catalog content is present in the initial HTML and works without JavaScript.
+JavaScript adds filters, table search and an accessible lightbox.
 
-1. Render dashboard → **New → Static Site** → connect `syedos/artelle`.
-2. Build command: *(none)* · Publish directory: `.`
-3. Custom domains: add `artelle.xyz` and `www.artelle.xyz`, then at the DNS
-   provider point the apex A record to Render's load balancer IP and `www`
-   CNAME to the `onrender.com` URL (Render shows both values on the domain page).
+The public spreadsheet contains artwork metadata. Source matching and review
+flags are included in the richer local spreadsheet and SQLite snapshot:
 
-## Local check
+```sh
+python3 scripts/build_catalog.py \
+  --exports "$HOME/Documents/Artelle" \
+  --archive "$HOME/Documents/Artelle/archive/2026-09-06"
+```
 
-No dev server needed — open any page directly, or `python3 -m http.server` if you
-want clean relative paths. Push to `main` = deployed.
+This writes `artworks.csv`, `artworks.json`, `artelle.sqlite` and `review.html`
+outside the repository. SQLite has `artworks` and `photos` tables, with a foreign
+key between them. These are **generated snapshots**, not a second editable
+master; rebuilding replaces them. Keep future sales and customer records in a
+separate private store.
+
+## Images
+
+The 20 existing clean images are retained. Fourteen new fronts are cropped and
+straightened using the recorded quadrilaterals in
+`catalog/imports/2026-09-06-crops.json`. Colour is converted to sRGB; public
+images omit source EXIF metadata. No paint is generated or reconstructed.
+Three abstracts are rotated to put the artist's signature upright.
+
+To regenerate web images and thumbnails, use a Python with Pillow installed:
+
+```sh
+python3 scripts/prepare_images.py \
+  --archive "$HOME/Documents/Artelle/archive/2026-09-06"
+python3 scripts/build_catalog.py
+```
+
+On the current Mac, the Pillow installation is arm64; use `arch -arm64 python3`
+for the image preparation command. Normal catalog builds work with either
+architecture. Image preparation is an offline task, not a Render dependency.
+
+## Details still to confirm
+
+- Four media, seven dimensions and nine years remain unconfirmed.
+- AQ-0024 (Verdure) has **2018 on the front and 2017 on the reverse**. Its year
+  stays blank until the artist resolves the conflict.
+- Twelve newly photographed works need a front photo without hands; two of
+  these also need the paper laid flat. The local review shows every front/back
+  pair and its flags.
+- All titles are proposals. Prices, availability, framing and shipping details
+  have not been supplied.
+- Dimensions follow the handwritten inches, normalized to height × width for
+  display. Whether they describe the entire sheet or the painted area is not
+  specified. Centimeters are converted mathematically.
+- The existing `hello@artelle.xyz` contact address is retained; mailbox delivery
+  has not been verified. The unverified Instagram link was removed.
+- No checkout, print fulfillment or digital-edition service is configured.
+  Collecting pages therefore use enquiries and make no fulfillment promises.
+
+## Deployment
+
+Render service: `srv-da4uu6m417fc73dle3lg`, workspace **syedOS**.
+Origin: `https://artelle-pi2e.onrender.com`.
+Domains: `artelle.xyz` and `www.artelle.xyz`.
+
+Build command is blank; publish directory is `.`. Generated outputs are committed
+alongside the master, so Render needs no runtime, database or image-processing
+packages. Push to `main`, then confirm Render deployed that exact commit and
+verify the public site. Use `GITHUB_TOKEN_BUXOR` for GitHub and
+`RENDER_API_KEY_SYEDOS` for Render.

@@ -9,7 +9,7 @@ Grids are 32x32 ASCII. Legend:
 Run:  python3 design/pixel-a.py   -> writes assets/brand/pixel/*.svg + design/pixel-a.html
       python3 design/pixel-a.py --png /tmp/px   -> also writes PNG previews for eyeballing
 """
-import os, sys
+import os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_SVG = os.path.join(ROOT, "assets", "brand", "pixel")
@@ -189,10 +189,17 @@ PALETTES = {
 }
 # ink-on-dark (reverse) variants swap ink for paper
 REVERSE = {"#": PAPER, "L": PAPER, "l": None, "F": PAPER, "f": None, "h": None, "y": PAPER}
+# colour mark for dark grounds: paper letter, same rose, slightly lifted leaves
+REVERSE_COLOUR = {"#": PAPER, "L": "#5B8A49", "l": "#9CC585", "F": "#8E2C3D", "f": "#C9485C", "h": "#F0A3B0", "y": "#E3B04B"}
+
+# the mark adopted for the site (2026-09-06): italic capital A, rose, colour
+ADOPTED = "italic-rose"
+IMG_DIR = os.path.join(ROOT, "assets", "img")
+TEMPLATE = os.path.join(ROOT, "templates", "page.html")
 
 # ---------------------------------------------------------------- render
 
-def to_svg(grid, palette, size=None):
+def rects_for(grid, palette):
     rects = []
     # merge horizontal runs of the same fill for a smaller file
     for r in range(N):
@@ -206,9 +213,12 @@ def to_svg(grid, palette, size=None):
                 c2 += 1
             rects.append(f'<rect x="{c}" y="{r}" width="{c2 - c + 1}" height="1" fill="{fill}"/>')
             c = c2 + 1
+    return "".join(rects)
+
+def to_svg(grid, palette, size=None):
     attrs = f' width="{size}" height="{size}"' if size else ""
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {N} {N}"{attrs} '
-            f'shape-rendering="crispEdges">' + "".join(rects) + "</svg>")
+            f'shape-rendering="crispEdges">' + rects_for(grid, palette) + "</svg>")
 
 def to_png(grid, palette, path, scale=12, bg=PAPER):
     from PIL import Image
@@ -272,7 +282,7 @@ def write_html(marks):
     for lname, fname in [(l, f) for l in ("italic", "cursive") for f in ("rose", "tulip", "blossom", "bud")]:
         g = marks[f"{lname}-{fname}"]
         ltitle, lcopy = LETTER_COPY[lname]; ftitle, fcopy = FLOWER_COPY[fname]
-        rec = '<span class="rec">Recommended</span>' if (lname, fname) == ("italic", "rose") else ""
+        rec = '<span class="rec">Adopted · site mark</span>' if f"{lname}-{fname}" == ADOPTED else ""
         key = f"{lname}-{fname}"
         trio = "".join(
             f'<figure><div class="tile">{img(key, p, 160, f"{ltitle} {ftitle}, {cap}")}</div><figcaption>{cap}</figcaption></figure>'
@@ -389,6 +399,33 @@ def write_html(marks):
         f.write(html)
     print(f"wrote {OUT_HTML}")
 
+
+# ---------------------------------------------------------------- adopt: site assets + template header
+
+def write_adopted(marks):
+    g = marks[ADOPTED]
+    head = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" role="img" aria-label="{label}">'
+    with open(os.path.join(IMG_DIR, "logo.svg"), "w") as f:
+        f.write(head.format(label="Artelle mark") + "<!-- Pixel A: italic capital A, stem rising into a rose. Source: design/pixel-a.py -->"
+                + rects_for(g, PALETTES["colour"]) + "</svg>\n")
+    with open(os.path.join(IMG_DIR, "logo-reverse.svg"), "w") as f:
+        f.write(head.format(label="Artelle mark, reversed") + "<!-- Pixel A for dark grounds -->"
+                + rects_for(g, REVERSE_COLOUR) + "</svg>\n")
+    # favicon: paper rounded square with a 2px margin so the ink letter survives dark tab bars
+    with open(os.path.join(IMG_DIR, "favicon.svg"), "w") as f:
+        f.write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" shape-rendering="crispEdges">'
+                f'<rect width="36" height="36" rx="6" fill="{PAPER}"/><g transform="translate(2 2)">'
+                + rects_for(g, PALETTES["colour"]) + "</g></svg>\n")
+    # header mark, inline in the shared template between <!-- mark --> ... <!-- /mark -->
+    tpl = open(TEMPLATE).read()
+    inline = ('<svg viewBox="0 0 32 32" shape-rendering="crispEdges" aria-hidden="true">'
+              + rects_for(g, PALETTES["colour"]) + "</svg>")
+    new = re.sub(r"<!-- mark -->.*?<!-- /mark -->", f"<!-- mark -->{inline}<!-- /mark -->", tpl, flags=re.S)
+    if new == tpl and "<!-- mark -->" not in tpl:
+        raise SystemExit("templates/page.html has no <!-- mark --> markers; add them around the brand svg")
+    open(TEMPLATE, "w").write(new)
+    print(f"adopted {ADOPTED}: logo.svg, logo-reverse.svg, favicon.svg, template header")
+
 if __name__ == "__main__":
     marks = build_marks()
     png_dir = None
@@ -408,6 +445,7 @@ if __name__ == "__main__":
             f.write(to_svg(g, REVERSE))
     print(f"wrote {len(marks) * 4} svgs to {OUT_SVG}")
     write_html(marks)
+    write_adopted(marks)
     if png_dir:
         from PIL import Image
         names = list(marks); pals = list(PALETTES)

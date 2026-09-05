@@ -63,7 +63,7 @@ p{max-width:64ch}
 .site-head{padding:30px 0 26px}
 .site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:inline-flex;align-items:center;gap:10px}
-.brand svg{width:24px;height:24px}
+.brand svg{width:32px;height:32px;flex:none}
 .brand .wordmark{font-family:var(--serif);font-weight:600;font-size:1.42rem;letter-spacing:.005em;line-height:1}
 .nav{display:flex;gap:clamp(16px,3vw,34px)}
 .nav a{
@@ -78,7 +78,7 @@ p{max-width:64ch}
 .site-foot p,.site-foot a{font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
 .site-foot a:hover{color:var(--ink)}
 .foot-brand{display:inline-flex;align-items:center;gap:9px}
-.foot-brand svg{width:17px;height:17px}
+.foot-brand svg,.foot-brand img{width:20px;height:20px;display:block}
 
 /* ---------- buttons ---------- */
 .btn{

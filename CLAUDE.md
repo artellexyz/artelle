@@ -41,6 +41,8 @@ sips -Z 1600 -s format jpeg -s formatOptions 85 source.jpg --out assets/art/work
 
 **Brand.** Mark is **Horizon** (dot resting on a line). It exists as files (`assets/img/logo.svg`, `logo-reverse.svg`, `favicon.svg`) but the header and footer embed it as inline SVG, so a mark change means editing the inline SVGs on all pages too. Palette: paper `#F4F1E9`, raise `#FBF9F3`, ink `#1C1712`, ink-2 `#6B6353`, line `#DCD5C5`, accent ultramarine `#33439B`. Type: Cormorant Garamond (display, italic titles) + Instrument Sans (text). The six rejected mark concepts and the proof sheet (`assets/brand/concepts/`, `design/marks.html`) are reference only; the proof sheet has its own inline CSS and is not linked from the site.
 
+**Pixel A mark (Sheet 2, Sep 2026).** `design/pixel-a.py` is the single source: it holds 32×32 ASCII grids for two letterforms (italic capital A, cursive a) and four flowers (rose, tulip, blossom, bud), and emits `assets/brand/pixel/*.svg` (ink / ultra / colour / reverse per mark) plus the proof page `design/pixel-a.html`. Edit the grids in the script and rerun it; never hand-edit those SVGs or the HTML. `--png /tmp/px` also writes PNG previews and a contact sheet for eyeballing. Not yet adopted as the site mark; the header still uses Horizon.
+
 **Voice.** Copy is plain portfolio prose matched to representational work. Do not drift back toward abstract or conceptual-art language.
 
 ## Deploy and identity

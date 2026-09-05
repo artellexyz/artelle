@@ -90,10 +90,12 @@ architecture. Image preparation is an offline task, not a Render dependency.
 - Dimensions follow the handwritten inches, normalized to height × width for
   display. Whether they describe the entire sheet or the painted area is not
   specified. Centimeters are converted mathematically.
-- The existing `hello@artelle.xyz` contact address is retained; mailbox delivery
-  has not been verified. The unverified Instagram link was removed.
+- The old `hello@artelle.xyz` address has no mail records configured. Public
+  pages show enquiries opening soon. Set `CONTACT_EMAIL` in
+  `scripts/build_catalog.py` only after the studio supplies a working address,
+  then rebuild. The unverified Instagram link was removed.
 - No checkout, print fulfillment or digital-edition service is configured.
-  Collecting pages therefore use enquiries and make no fulfillment promises.
+  Collecting pages explain the future enquiry process and make no fulfillment promises.
 
 ## Deployment
 

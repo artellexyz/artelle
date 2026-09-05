@@ -21,6 +21,8 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = 'https://artelle.xyz'
+# Set this only after the studio confirms an address that can receive enquiries.
+CONTACT_EMAIL = None
 LABELS = {'landscape':'Landscapes','botanical':'Nature','still-life':'Still life','abstract':'Abstracts'}
 CSV_FIELDS = ['id','artist','title','title_status','medium','support','height_in','width_in','height_cm','width_cm','year','availability','price','currency','front_photo','reverse_photo','reverse_inscription','review_flags','artwork_url']
 PUBLIC_CSV_FIELDS = ['id','artist','title','medium','support','height_in','width_in','height_cm','width_cm','year','artwork_url']
@@ -52,6 +54,12 @@ def metadata(artwork):
 
 def artwork_url(artwork):
     return 'work/'+artwork['id'].lower()+'.html'
+
+
+def enquiry_link(label='Contact the studio', subject='Artwork enquiry', base='', style='btn'):
+    if CONTACT_EMAIL:
+        return f'<a class="{style}" href="mailto:{esc(CONTACT_EMAIL)}?subject={quote(subject)}">{esc(label)}</a>'
+    return f'<a class="{style}" href="{base}contact.html">Enquiries opening soon</a>'
 
 
 def image_tag(artwork, base='', thumbnail=False, eager=False):
@@ -87,6 +95,7 @@ def page(title,description,body,path,active='works',lightbox=False,og=None,struc
     values = {'TITLE':esc(title),'DESCRIPTION':esc(description),'CANONICAL':ORIGIN+('/' if path=='index.html' else '/'+path),
               'OG_IMAGE':ORIGIN+'/'+(og or 'assets/img/og.jpg'),'BASE':base,'BODY':body,'NAV':'\n'.join(nav),
               'LIGHTBOX':LIGHTBOX if lightbox else '',
+              'STUDIO_CONTACT':f'<a href="mailto:{esc(CONTACT_EMAIL)}">{esc(CONTACT_EMAIL)}</a>' if CONTACT_EMAIL else f'<a href="{base}contact.html">Contact</a>',
               'STRUCTURED_DATA':'<script type="application/ld+json">'+json.dumps(structured,ensure_ascii=False).replace('<','\\u003c')+'</script>' if structured else ''}
     result = (ROOT/'templates/page.html').read_text()
     for key,value in values.items():
@@ -160,6 +169,9 @@ def csv_rows(artworks):
 
 def generate(data):
     artworks=data['artworks']; by_id={a['id']:a for a in artworks}; count=len(artworks)
+    enquiry_note = 'Contact the studio for price, availability and delivery details.' if CONTACT_EMAIL else 'Sales enquiries are opening soon.'
+    catalog_sales_note = 'Prices and availability are available by enquiry.' if CONTACT_EMAIL else 'Prices and availability will be confirmed when sales enquiries open.'
+    artwork_sales_note = enquiry_note if CONTACT_EMAIL else 'Prices, availability and delivery details will be confirmed before a purchase.'
     outputs={}
     filters='<button class="chip" type="button" data-filter="all" aria-pressed="true">All works</button>'
     filters+=''.join(f'<button class="chip" type="button" data-filter="{key}" aria-pressed="false">{label}</button>' for key,label in LABELS.items())
@@ -173,10 +185,10 @@ def generate(data):
     selected=[by_id[k] for k in ['AQ-0002','AQ-0021','AQ-0003','AQ-0004','AQ-0023','AQ-0018']]
     body=f'''<section class="hero"><div class="wrap"><div class="hero-copy"><p class="eyebrow">Art by Anisa Quraishi</p><h1>A world<br>on paper.</h1><p class="lede">Landscapes, still life, flowers and abstract forms. Original works by an artist based in Pakistan.</p><div class="actions"><a class="btn" href="works.html">Explore the works</a><a class="btn-ghost" href="about.html">Meet the artist</a></div></div><a class="hero-art" href="{artwork_url(hero)}" aria-label="View Minaret"><div class="plate natural">{image_tag(hero,eager=True)}</div></a></div></section>
       <section class="section"><div class="wrap"><div class="section-head"><h2>Selected works</h2><a class="text-link" href="works.html">View all {count} works</a></div><div class="works">{''.join(card(a) for a in selected)}</div></div></section>
-      <section class="band"><div class="wrap band-in"><p class="eyebrow">From the studio</p><h2>A work to live with.</h2><p class="catalog-intro">For prices, availability and delivery enquiries, get in touch with the studio.</p><div class="actions"><a class="btn-ghost" href="editions.html">Collecting a work</a></div></div></section>'''
+      <section class="band"><div class="wrap band-in"><p class="eyebrow">From the studio</p><h2>A work to live with.</h2><p class="catalog-intro">{enquiry_note}</p><div class="actions"><a class="btn-ghost" href="editions.html">Collecting a work</a></div></div></section>'''
     outputs['index.html']=page('Artelle — Art by Anisa Quraishi','Original artworks by Anisa Quraishi, an artist based in Pakistan. Explore landscapes, still life, botanical studies and abstract compositions.',body,'index.html',active='',lightbox=True,structured={'@context':'https://schema.org','@type':'WebSite','name':'Artelle','url':ORIGIN,'about':{'@type':'Person','name':'Anisa Quraishi'}})
     table_rows=''.join(f'''<tr data-search="{esc((a['id']+' '+a['title']+' '+(a['medium'] or '')+' '+a['category']+' '+str(a['year'] or '')).lower())}"><td class="inventory-id">{a['id']}</td><td><a class="table-art" href="{artwork_url(a)}">{image_tag(a,thumbnail=True)}<span>{esc(a['title'])}</span></a></td><td>{esc(medium_text(a)) if a['medium'] else 'To confirm'}</td><td class="dimension-cell">{esc(size_text(a)) if a['dimensions'] else 'To confirm'}<small>{esc(size_text(a,'cm'))}</small></td><td>{a['year'] or '—'}</td></tr>''' for a in artworks)
-    body=f'''<section class="section catalog-section"><div class="wrap"><p class="eyebrow">Anisa Quraishi</p><div class="section-head"><div><h1>Catalog</h1><p class="catalog-intro">{count} original artworks. Dimensions are height × width.</p></div><a class="btn-ghost" href="catalog/artworks.csv" download>Download spreadsheet</a></div><div class="table-tools"><label for="catalog-search">Find a work<input type="search" id="catalog-search" placeholder="Title, medium, year or reference" autocomplete="off"></label><a class="text-link" href="works.html">Back to gallery</a></div><p class="result-count" aria-live="polite"><span id="table-count">{count}</span> works</p><div class="table-scroll" tabindex="0" role="region" aria-label="Artwork catalog"><table class="catalog-table"><caption class="sr-only">Artworks by Anisa Quraishi</caption><thead><tr><th scope="col">Reference</th><th scope="col">Artwork</th><th scope="col">Medium</th><th scope="col">Size</th><th scope="col">Year</th></tr></thead><tbody>{table_rows}</tbody></table></div><p class="catalog-note">Sizes are transcribed from the artist’s notes; sheet and image-area measurements will be confirmed for a purchase. Prices and availability are available by enquiry.</p></div></section>'''
+    body=f'''<section class="section catalog-section"><div class="wrap"><p class="eyebrow">Anisa Quraishi</p><div class="section-head"><div><h1>Catalog</h1><p class="catalog-intro">{count} original artworks. Dimensions are height × width.</p></div><a class="btn-ghost" href="catalog/artworks.csv" download>Download spreadsheet</a></div><div class="table-tools"><label for="catalog-search">Find a work<input type="search" id="catalog-search" placeholder="Title, medium, year or reference" autocomplete="off"></label><a class="text-link" href="works.html">Back to gallery</a></div><p class="result-count" aria-live="polite"><span id="table-count">{count}</span> works</p><div class="table-scroll" tabindex="0" role="region" aria-label="Artwork catalog"><table class="catalog-table"><caption class="sr-only">Artworks by Anisa Quraishi</caption><thead><tr><th scope="col">Reference</th><th scope="col">Artwork</th><th scope="col">Medium</th><th scope="col">Size</th><th scope="col">Year</th></tr></thead><tbody>{table_rows}</tbody></table></div><p class="catalog-note">Sizes are transcribed from the artist’s notes; sheet and image-area measurements will be confirmed for a purchase. {catalog_sales_note}</p></div></section>'''
     outputs['catalog.html']=page('Artwork catalog — Anisa Quraishi — Artelle','A table of artworks by Anisa Quraishi, with medium, dimensions and year where recorded.',body,'catalog.html')
     for a in artworks:
         facts=[('Artist',a['artist']),('Medium',medium_text(a) if a['medium'] else 'To be confirmed')]
@@ -184,8 +196,8 @@ def generate(data):
         if a['year']:facts.append(('Year',str(a['year'])))
         facts.append(('Reference',a['id']))
         detail=''.join(f'<div><dt>{esc(key)}</dt><dd>{esc(value)}</dd></div>' for key,value in facts)
-        subject=quote('Artwork enquiry: '+a['title']+' ('+a['id']+')')
-        body=f'''<section class="section catalog-section"><div class="wrap"><a class="text-link back-link" href="../works.html">← All works</a><div class="artwork-layout"><div class="plate natural artwork-image">{image_tag(a,base='../',eager=True)}</div><div class="artwork-copy"><p class="eyebrow">Anisa Quraishi</p><h1>{esc(a['title'])}</h1><p class="artwork-description">{esc(a['description'])}</p><dl class="artwork-facts">{detail}</dl><div class="actions"><a class="btn" href="mailto:hello@artelle.xyz?subject={subject}">Enquire about this work</a></div><p class="catalog-note">Contact the studio for price, availability and delivery details.</p></div></div></div></section>'''
+        subject='Artwork enquiry: '+a['title']+' ('+a['id']+')'
+        body=f'''<section class="section catalog-section"><div class="wrap"><a class="text-link back-link" href="../works.html">← All works</a><div class="artwork-layout"><div class="plate natural artwork-image">{image_tag(a,base='../',eager=True)}</div><div class="artwork-copy"><p class="eyebrow">Anisa Quraishi</p><h1>{esc(a['title'])}</h1><p class="artwork-description">{esc(a['description'])}</p><dl class="artwork-facts">{detail}</dl><div class="actions">{enquiry_link('Enquire about this work',subject,base='../')}</div><p class="catalog-note">{artwork_sales_note}</p></div></div></div></section>'''
         structured={'@context':'https://schema.org','@type':'VisualArtwork','@id':ORIGIN+'/'+artwork_url(a),'name':a['title'],'identifier':a['id'],'creator':{'@type':'Person','name':a['artist']},'image':ORIGIN+'/'+a['image']['path'],'description':a['description'],'artworkSurface':'Paper'}
         if a['medium']:structured['artMedium']=a['medium']
         if a['dimensions']:
@@ -193,10 +205,15 @@ def generate(data):
         outputs[artwork_url(a)]=page(a['title']+' — Anisa Quraishi — Artelle',a['description'],body,artwork_url(a),og=a['image']['path'],structured=structured)
     body=f'''<section class="section catalog-section"><div class="wrap split"><div class="plate natural">{image_tag(by_id['AQ-0019'],eager=True)}</div><div><p class="eyebrow">The artist</p><h1>Anisa Quraishi</h1><p class="artwork-description">Anisa Quraishi is an artist based in Pakistan. Her work spans landscapes, still life, botanical studies and abstraction, with works in watercolour, pastel and mixed media.</p><p class="catalog-intro">Artelle brings these works together in one place. The catalog includes quiet studies of leaves and flowers, domestic objects, and experiments in colour and shape.</p><div class="actions"><a class="btn" href="works.html">Explore the works</a><a class="btn-ghost" href="contact.html">Contact the studio</a></div></div></div></section>'''
     outputs['about.html']=page('Anisa Quraishi — About the artist — Artelle','Meet Anisa Quraishi, an artist based in Pakistan working in watercolour, pastel and mixed media.',body,'about.html',active='about')
-    body='''<section class="section catalog-section"><div class="narrow"><p class="eyebrow">Collecting</p><h1>Bring a work home.</h1><p class="lede catalog-intro">For an original artwork, start with an enquiry to the studio. Each piece has its own reference in the catalog.</p><ol class="steps"><li><div><strong>Choose a work.</strong><p>Browse the gallery and open the artwork page for its medium, dimensions and year where recorded.</p></div></li><li><div><strong>Contact the studio.</strong><p>Include the title or reference, your country and delivery postcode. We will confirm availability, price and presentation.</p></div></li><li><div><strong>Confirm the details.</strong><p>Payment, packing and delivery arrangements are agreed before a purchase.</p></div></li></ol><div class="actions"><a class="btn" href="works.html">Browse works</a><a class="btn-ghost" href="contact.html">Contact the studio</a></div></div></section>'''
-    outputs['editions.html']=page('Collecting an artwork — Artelle','Enquire about original artworks by Anisa Quraishi, including prices, availability and delivery.',body,'editions.html',active='editions')
-    body='''<section class="section catalog-section"><div class="narrow"><p class="eyebrow">Artelle · Anisa Quraishi</p><h1>Contact the studio.</h1><p class="lede catalog-intro">For artwork enquiries, prices and availability, email the studio.</p><ul class="contact-list"><li><span class="k">Email</span><a class="v" href="mailto:hello@artelle.xyz?subject=Artwork%20enquiry">hello@artelle.xyz</a></li><li><span class="k">Artist</span><span class="v">Anisa Quraishi</span></li><li><span class="k">Based in</span><span class="v">Pakistan</span></li></ul><p class="catalog-note">Please include the artwork title or reference and your delivery country and postcode.</p></div></section>'''
-    outputs['contact.html']=page('Contact — Artelle','Contact the studio of Anisa Quraishi for artwork enquiries, prices and availability.',body,'contact.html',active='contact')
+    collecting_intro = 'For an original artwork, start with an enquiry to the studio. Each piece has its own reference in the catalog.' if CONTACT_EMAIL else 'Sales enquiries are opening soon. When they open, you can enquire about a work using its title or catalog reference.'
+    body=f'''<section class="section catalog-section"><div class="narrow"><p class="eyebrow">Collecting</p><h1>Bring a work home.</h1><p class="lede catalog-intro">{collecting_intro}</p><ol class="steps"><li><div><strong>Choose a work.</strong><p>Browse the gallery and open the artwork page for its medium, dimensions and year where recorded.</p></div></li><li><div><strong>Enquire with the studio.</strong><p>Include the title or reference, your country and delivery postcode. Availability, price and presentation will be confirmed before a purchase.</p></div></li><li><div><strong>Confirm the details.</strong><p>Payment, packing and delivery arrangements are agreed before a purchase.</p></div></li></ol><div class="actions"><a class="btn" href="works.html">Browse works</a>{enquiry_link(style='btn-ghost')}</div></div></section>'''
+    outputs['editions.html']=page('Collecting an artwork — Artelle','Information about collecting original artworks by Anisa Quraishi.',body,'editions.html',active='editions')
+    contact_heading = 'Contact the studio.' if CONTACT_EMAIL else 'Enquiries opening soon.'
+    contact_intro = 'For artwork enquiries, prices and availability, email the studio.' if CONTACT_EMAIL else 'Explore the works of Anisa Quraishi. Contact details for sales enquiries will appear here when the studio opens for sales.'
+    contact_row = f'<li><span class="k">Email</span><a class="v" href="mailto:{esc(CONTACT_EMAIL)}?subject=Artwork%20enquiry">{esc(CONTACT_EMAIL)}</a></li>' if CONTACT_EMAIL else ''
+    contact_action = '<p class="catalog-note">Please include the artwork title or reference and your delivery country and postcode.</p>' if CONTACT_EMAIL else '<div class="actions"><a class="btn" href="works.html">Explore the works</a></div>'
+    body=f'''<section class="section catalog-section"><div class="narrow"><p class="eyebrow">Artelle · Anisa Quraishi</p><h1>{contact_heading}</h1><p class="lede catalog-intro">{contact_intro}</p><ul class="contact-list">{contact_row}<li><span class="k">Artist</span><span class="v">Anisa Quraishi</span></li><li><span class="k">Based in</span><span class="v">Pakistan</span></li></ul>{contact_action}</div></section>'''
+    outputs['contact.html']=page('Contact — Artelle',contact_intro,body,'contact.html',active='contact')
     buffer=io.StringIO(newline='');writer=csv.DictWriter(buffer,fieldnames=PUBLIC_CSV_FIELDS,extrasaction='ignore',lineterminator='\n');writer.writeheader();writer.writerows(csv_rows(artworks))
     outputs['catalog/artworks.csv']='\ufeff'+buffer.getvalue()
     locations=['index.html','works.html','catalog.html','about.html','editions.html','contact.html']+[artwork_url(a) for a in artworks]
